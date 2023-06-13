@@ -104,3 +104,8 @@ func main() {
 	s.Remove(3)
 	fmt.Println("list of all items", s.List())
 }
+
+/*
+s.Lock()获取写锁，用于互斥访问和修改Set的内部状态。
+s.RLock()获取读锁，用于支持并发读取Set的内部状态，不涉及修改操作。
+*/
