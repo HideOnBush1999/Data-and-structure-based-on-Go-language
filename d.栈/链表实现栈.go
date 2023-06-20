@@ -19,7 +19,7 @@ type LinkStack struct {
 	lock sync.Mutex
 }
 
-// 入栈
+// 入栈(将新节点放在栈顶)
 func (stack *LinkStack) Push(v string) {
 	stack.lock.Lock()
 	defer stack.lock.Unlock()
@@ -42,7 +42,7 @@ func (stack *LinkStack) Push(v string) {
 	stack.size = stack.size + 1
 }
 
-// 出栈
+// 出栈(将栈顶元素弹出)
 func (stack *LinkStack) Pop() string {
 	stack.lock.Lock()
 	defer stack.lock.Unlock()
