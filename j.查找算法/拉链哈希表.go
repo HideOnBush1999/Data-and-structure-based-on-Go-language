@@ -207,8 +207,8 @@ func (m *HashMap) Range() {
 	}
 	fmt.Println()
 }
-
-func main() {
+/*
+func main() { 
 	// 新建一个哈希表
 	hashMap := NewHashMap(16)
 
@@ -239,3 +239,4 @@ func main() {
 		fmt.Printf("get %v not found\n", key)
 	}
 }
+ */
